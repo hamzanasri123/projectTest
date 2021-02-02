@@ -1,0 +1,658 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Header */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 450px;
+  position: relative;
+
+  background-image: url("/img/header.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(30, 30, 30, 0.5);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  opacity: 1;
+
+  z-index: 1;
+}
+
+.container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .menu .items {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-decoration: none;
+}
+.container .menu .items .item {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  list-style: none;
+  margin: 0 20px;
+}
+.container .menu .items .item > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.text-logo {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+.sub-title-header {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.header-bottom {
+  background-color: rgba(26, 26, 26, 0.8);
+  width: 400px;
+  height: 200px;
+
+  position: absolute;
+ top: 50%;
+ left: 40%;
+}
+
+.btn {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn-savoir {
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background: #000;
+
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btns {
+  text-align: left;
+  margin-top: 20px;
+}
+.btns .btn-savoirPlus {
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  width: 120px;
+  height: 50px;
+
+  color: rgb(22, 22, 22);
+  background: #fff;
+
+  padding: 10px;
+  text-decoration: none;
+}
+.btn-contact {
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background: #000;
+
+  padding: 10px;
+  text-decoration: none;
+}
+.btn .btn-contact:hover {
+  color: rgb(26, 25, 25);
+  background-color: #ffffff;
+}
+.btn .btn-savoir:hover {
+  color: rgb(26, 25, 25);
+  background-color: #ffffff;
+}
+
+.title-header {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.title-header::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 30%; /* Change this to whatever width you want. */
+  border-bottom: 1px solid #ffffff; /* This creates the border. Replace black with whatever color you want. */
+}
+h3 {
+  text-transform: uppercase;
+}
+.widget {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  padding: 30px;
+}
+.icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 750px;
+  background-image: url("/img/footer.png");
+  background-size: 100%;
+  position: relative;
+  color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(15, 15, 15, 0.5);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  top: 0;
+}
+
+footer .sub-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+.sub-title:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  padding-top: 10px;
+
+  border-bottom: 1px solid #ffffff;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.section-one {
+  max-width: 100%;
+  height: 700px;
+  display: flex;
+
+ /*  padding: 30px; */
+  justify-content: space-between;
+}
+.contenu {
+  padding: 60px ;
+}
+.titre-section-one {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+.titre-section-one:after {
+  content: "";
+  display: block;
+
+  width: 30%;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+.para-sec1 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 20px;
+  text-align: justify;
+  color: #fff;
+
+ /*  margin-right: 50px; */
+}
+
+.sub-title {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.sub-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+.main-first {
+  width: 100%;
+
+  background-color: rgba(166, 166, 166, 255);
+}
+
+.main-second {
+  background-color: rgba(42, 47, 51, 255);
+  width: 100%;
+}
+.section-two {
+  width: 100%;
+  height: 800px;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.container-section-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  width: 30%;
+  height: 300px;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.card:hover {
+  box-shadow: white;
+}
+.card > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.card-par {
+  display: none;
+}
+
+.card > img:hover {
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.09);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.09);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.09);
+  transition: all 200ms ease-in;
+  transform: scale(1.09);
+  filter: brightness(50%);
+}
+.card > i {
+  font-size: 20px;
+  text-align: center;
+}
+.card:hover .card-par {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  text-align: center;
+  margin-top: 10px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+.icon-flesh {
+  text-align: center;
+}
+.card:hover i {
+  display: none;
+}
+.main-third {
+  background-color: rgba(115, 115, 115, 255);
+}
+
+.titre-section {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.titre-section::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+.section-three {
+  width: 100%;
+  height: 400px;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.container-three {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.card-three {
+  width: 50%;
+  height: 50%;
+  margin: 0 20px 0 20px;
+  border-radius: 8px;
+}
+.img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  top: 0;
+}
+.image-section-one > img {
+  border-radius: 8px;
+}
+.image-section-one > img:hover {
+  box-shadow: 0px 0px 8px 3px grey;
+}
+
+.icon > i {
+  text-align: center;
+  font-size: 50px;
+}
+.title-footer {
+  font-family: "Lato", sans-serif;
+  line-height: 50px;
+  text-align: center;
+}
+
+.des {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.sub-titl {
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sub-titl::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+.footer-line::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+.items-footer .item > a {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* .menu-footer {
+  display: flex;
+  justify-content: center;
+} */
+
+.icon-social {
+  margin-left: 20px;
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.items-footer {
+  display: flex;
+}
+
+.items-footer > li {
+  margin-left: 10px;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: space-around;
+  line-height: 10;
+  align-items: center;
+}
+
+.logo-footer > ul {
+  display: flex;
+  margin: 15px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.log-ftr {
+  width: 150px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Respensive */
+.ic {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .ic {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu .responsive {
+    position: relative;
+  }
+  .menu.responsive .ic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+  .menu.responsive .ic {
+    float: left;
+    display: block;
+  }
+  .container {
+  }
+
+
+}
